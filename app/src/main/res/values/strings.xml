@@ -8,6 +8,11 @@
     <string name="check">CHECK</string>
     <string name="next">NEXT</string>
 
+    <string name="empty_input">Please fill this field.</string>\
+
+    <string name="is_palindrome">isPalindrome</string>
+    <string name="not_palindrome">not palindrome</string>
+
     <!-- Second Screen -->
     <string name="welcome">Welcome</string>
     <string name="name">Name</string>

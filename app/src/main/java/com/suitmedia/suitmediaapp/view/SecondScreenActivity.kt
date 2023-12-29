@@ -17,4 +17,8 @@ class SecondScreenActivity : AppCompatActivity() {
             startActivity(Intent(this, ThirdScreenActivity::class.java))
         }
     }
+
+    companion object {
+        const val EXTRA_NAME = "extra_name"
+    }
 }
