@@ -21,11 +21,15 @@
 
     <string name="choose_user">Choose a User</string>
 
+    <string name="title_bar_2">Second Screen</string>
+
     <!-- Third Screen -->
     <string name="username">Firstname Lastname</string>
     <string name="email">EMAIL@EMAIL.COM</string>
 
     <string name="error">TIMEOUT</string>
     <string name="reload">RELOAD</string>
+
+    <string name="title_bar_3">Third Screen</string>
 
 </resources>

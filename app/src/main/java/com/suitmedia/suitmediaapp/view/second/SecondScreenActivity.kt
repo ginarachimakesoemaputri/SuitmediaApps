@@ -24,12 +24,14 @@ class SecondScreenActivity : AppCompatActivity() {
         binding = ActivitySecondScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.topAppBar.setNavigationOnClickListener {
+            finish()
+        }
+
         val name = intent.getStringExtra(EXTRA_NAME)
         binding.tvName.text = name
 
         binding.btnChooseUser.setOnClickListener {
-//            startActivity(Intent(this, ThirdScreenActivity::class.java))
-
             val intentWithResult = Intent(this@SecondScreenActivity, ThirdScreenActivity::class.java)
             resultLauncher.launch(intentWithResult)
         }

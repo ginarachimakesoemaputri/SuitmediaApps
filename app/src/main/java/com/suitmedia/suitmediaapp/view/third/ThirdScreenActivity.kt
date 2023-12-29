@@ -6,7 +6,6 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.suitmedia.suitmediaapp.R
 import com.suitmedia.suitmediaapp.data.response.DataItem
 import com.suitmedia.suitmediaapp.databinding.ActivityThirdScreenBinding
 
@@ -23,6 +22,10 @@ class ThirdScreenActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setUserData()
+
+        binding.topAppBar.setNavigationOnClickListener {
+            finish()
+        }
     }
 
     private fun setUserData() {

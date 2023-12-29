@@ -19,6 +19,8 @@ class FirstScreenActivity : AppCompatActivity() {
         binding = ActivityFirstScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.hide()
+
         binding.btnNext.setOnClickListener {
             val name = binding.edtName.text.toString()
             if (name.isEmpty()){
