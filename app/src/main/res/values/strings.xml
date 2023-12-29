@@ -20,4 +20,7 @@
     <string name="username">Firstname Lastname</string>
     <string name="email">EMAIL@EMAIL.COM</string>
 
+    <string name="error">TIMEOUT</string>
+    <string name="reload">RELOAD</string>
+
 </resources>
