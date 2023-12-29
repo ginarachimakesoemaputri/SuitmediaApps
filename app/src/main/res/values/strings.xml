@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Suitmedia App</string>
+
+    <!-- First Screen -->
+    <string name="hint_name">Name</string>
+    <string name="hint_palindrome">Palindrome</string>
+
+    <string name="check">CHECK</string>
+    <string name="next">NEXT</string>
+
+    <!-- Second Screen -->
+    <string name="welcome">Welcome</string>
+    <string name="name">Name</string>
+
+    <string name="selected_name">Selected User Name</string>
+
+    <string name="choose_user">Choose a User</string>
+
+    <!-- Third Screen -->
+    <string name="firstname">Firstname</string>
+    <string name="lastname">Lastname</string>
+    <string name="email">EMAIL@EMAIL.COM</string>
+
 </resources>
