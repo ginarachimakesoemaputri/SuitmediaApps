@@ -17,8 +17,7 @@
     <string name="choose_user">Choose a User</string>
 
     <!-- Third Screen -->
-    <string name="firstname">Firstname</string>
-    <string name="lastname">Lastname</string>
+    <string name="username">Firstname Lastname</string>
     <string name="email">EMAIL@EMAIL.COM</string>
 
 </resources>
