@@ -1,12 +1,20 @@
 package com.suitmedia.suitmediaapp.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.suitmedia.suitmediaapp.R
+import com.suitmedia.suitmediaapp.databinding.ActivitySecondScreenBinding
 
 class SecondScreenActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivitySecondScreenBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_second_screen)
+        binding = ActivitySecondScreenBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.btnChooseUser.setOnClickListener {
+            startActivity(Intent(this, ThirdScreenActivity::class.java))
+        }
     }
 }

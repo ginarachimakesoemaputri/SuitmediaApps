@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.suitmedia.suitmediaapp"
-    compileSdk = 31
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.suitmedia.suitmediaapp"
