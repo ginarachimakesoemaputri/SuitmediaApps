@@ -1,4 +1,4 @@
-package com.suitmedia.suitmediaapp.view
+package com.suitmedia.suitmediaapp.view.first
 
 import androidx.lifecycle.ViewModel
 

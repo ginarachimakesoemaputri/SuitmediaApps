@@ -1,9 +1,10 @@
-package com.suitmedia.suitmediaapp.view
+package com.suitmedia.suitmediaapp.view.second
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.suitmedia.suitmediaapp.databinding.ActivitySecondScreenBinding
+import com.suitmedia.suitmediaapp.view.third.ThirdScreenActivity
 
 class SecondScreenActivity : AppCompatActivity() {
 

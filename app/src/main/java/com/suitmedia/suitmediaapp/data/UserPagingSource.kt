@@ -1,5 +1,6 @@
 package com.suitmedia.suitmediaapp.data
 
+import android.util.Log
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.suitmedia.suitmediaapp.data.response.DataItem
@@ -15,7 +16,7 @@ class UserPagingSource(private val apiService: ApiService) :
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, DataItem> {
         return try {
             val page = params.key ?: INITIAL_PAGE_INDEX
-            val responseDataStories = apiService.getUsers(params.loadSize)
+            val responseDataStories = apiService.getUsers(page, params.loadSize)
 
             LoadResult.Page(
                 data = responseDataStories.data,

@@ -16,13 +16,13 @@
         android:theme="@style/Theme.SuitmediaApp"
         tools:targetApi="31">
         <activity
-            android:name=".view.ThirdScreenActivity"
+            android:name=".view.third.ThirdScreenActivity"
             android:exported="false" />
         <activity
-            android:name=".view.SecondScreenActivity"
+            android:name=".view.second.SecondScreenActivity"
             android:exported="false" />
         <activity
-            android:name=".view.FirstScreenActivity"
+            android:name=".view.first.FirstScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

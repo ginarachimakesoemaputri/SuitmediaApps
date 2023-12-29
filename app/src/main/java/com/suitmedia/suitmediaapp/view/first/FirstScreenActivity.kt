@@ -1,4 +1,4 @@
-package com.suitmedia.suitmediaapp.view
+package com.suitmedia.suitmediaapp.view.first
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.activity.viewModels
 import com.suitmedia.suitmediaapp.R
 import com.suitmedia.suitmediaapp.databinding.ActivityFirstScreenBinding
+import com.suitmedia.suitmediaapp.view.second.SecondScreenActivity
 
 class FirstScreenActivity : AppCompatActivity() {
 
