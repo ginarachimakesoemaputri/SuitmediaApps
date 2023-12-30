@@ -11,6 +11,7 @@ import com.suitmedia.suitmediaapp.data.retrofit.ApiService
 class UserRepository(
     private val apiService: ApiService
 ) {
+
     fun getAllUsers() : LiveData<PagingData<DataItem>> {
         return Pager(
             config = PagingConfig(
@@ -20,6 +21,15 @@ class UserRepository(
                 UserPagingSource(apiService)
             }
         ).liveData
+    }
+
+    fun refreshData(callback: RefreshCallback) {
+        getAllUsers()
+        callback.onRefreshComplete()
+    }
+
+    interface RefreshCallback {
+        fun onRefreshComplete()
     }
 
     companion object {

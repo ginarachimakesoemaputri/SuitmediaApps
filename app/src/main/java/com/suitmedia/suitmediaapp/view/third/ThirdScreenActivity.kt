@@ -26,6 +26,14 @@ class ThirdScreenActivity : AppCompatActivity() {
         binding.topAppBar.setNavigationOnClickListener {
             finish()
         }
+
+        binding.swiperefresh.setOnRefreshListener {
+            viewModel.refreshData()
+        }
+
+        viewModel.isRefreshing.observe(this) { isRefreshing ->
+            binding.swiperefresh.isRefreshing = isRefreshing
+        }
     }
 
     private fun setUserData() {
